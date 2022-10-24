@@ -65,10 +65,10 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, ot
     timeSinceStart = game.runtime()
     animation.setAction(piggy, ActionKind.Dead)
     pause(50)
-    if (info.score() >= 5000) {
+    if (info.score() > 5000) {
         music.magicWand.play()
         game.setDialogCursor(assets.image`empty`)
-        game.splash("Gratulujeme!", "Odznak je váš!")
+        game.splash("Gratulujeme!", "Získali jste více jak 5000 bodů!")
     }
     game.setDialogCursor(assets.image`piggy 1`)
     sendMessageToSimulator("event", "gameOver-" + info.score() + "-" + timeSinceStart)
