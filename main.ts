@@ -114,7 +114,7 @@ let counter = 0
 end = 0
 let difficulty = 3
 piggy.say("3-2-1!")
-game.showLongText("Hrajte mezerníkem nebo tlačítkem A, zkuste získat odznak :)", DialogLayout.Top)
+game.showLongText("Hrajte mezerníkem nebo tlačítkem A :)", DialogLayout.Top)
 piggy.say("RUN!", 2000)
 game.onUpdate(function () {
     if (piggy.y < 98) {
